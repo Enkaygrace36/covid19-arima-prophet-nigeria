@@ -7,9 +7,8 @@
 #
 # Data: put the NCDC daily cases in "ncdc_covid_2021.csv" with two columns:
 #   date  (YYYY-MM-DD)   and   cases  (daily confirmed cases)
-# Reconstructed from the paper's description, not the original script.
-# Check the settings marked CHECK against your original analysis.
-
+# Rewritten from the method described in the paper, not the original analysis script.
+# Settings marked CHECK are not specified in the paper (AIC search range, Ljung-Box lag, Box-Cox lambda).
 library(forecast)   # Arima, auto.arima, BoxCox, accuracy
 library(prophet)    # Facebook Prophet
 library(tseries)    # adf.test
